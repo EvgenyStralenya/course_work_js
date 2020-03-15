@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: -moz-linear-gradient(top, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(243,129,129,0.9) 0%,rgba(252,227,138,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f38181', endColorstr='#e6fce38a',GradientType=0 ); /* IE6-9 */
+  background-size: auto; 
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+#map {
+  width: 100%;
+  height: 73%;
+  position: relative;
+}
+
+.main .title {
+  padding: 30px 0 44px;
+}
+
+.main .title h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin: 0 auto;
+  color: grey;
+}
+
+.main .store_selection select {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Amatic SC', cursive;;
+  font-size: 30px;
+  font-weight: 700;
+  color: grey;
+  padding-left: 25px;
+}
+
+#map .store_description {
+  position: absolute;
+  top: 15px;
+  left: -400px;
+  transition: 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  z-index: 1;
+  height: 100%;
+}
+
+#map .on {
+  top: 15px;
+  left: 15px;
+  transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+
+#map .store_description .pop_up {
+  width: 400px;
+  height: 94%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#map .store_description .pop_up .description {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#map .store_description .pop_up .shop_address,.shop_name,.web_site {
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  font-family: 'Neucha', cursive;
+  font-size: 20px;
+}
+
+#map .store_description .pop_up button {
+  width: 150px;
+  border: 2px solid #19b9d1;
+  border-radius: 5px;
+  font-family: 'Amatic SC', cursive;;
+  font-size: 25px;
+  color: grey;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+#map .store_description .pop_up button:hover {
+  transition: 0.5s;
+  background-color: #19b9d1;
+  color: white;
+}
+
+#map .store_description .pop_up .carousel {
+  width: 100%;
+  height: 49%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
